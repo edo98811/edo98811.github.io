@@ -1,0 +1,15 @@
+
+  /* Center the heading */
+  .heading {
+    text-align: center;
+  }
+  
+  /* Add styles to make it visually appealing */
+  .heading {
+    font-size: 32px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
