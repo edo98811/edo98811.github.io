@@ -1,0 +1,81 @@
+
+
+/* Homepage (index.html) */
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 10%;
+}
+
+/* About Page (about.html) */
+.about-container {
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Contact Page (contact.html) */
+.contact-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-container li {
+  margin: 10px 0;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-left .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center .nav-links li {
+  margin-right: 1rem;
+}
+
+.navbar-center .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
