@@ -1,0 +1,52 @@
+/* Center content */
+.contacts-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+.contacts-container p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* List styling */
+.contacts-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each contact item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    transition: background 0.3s ease;
+}
+
+/* Icon styles */
+.contact-item img {
+    width: 32px;  /* Adjusted logo size */
+    height: 32px; /* Ensures consistent size */
+    margin-right: 10px;
+}
+
+/* Link styles */
+.contact-item a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.contact-item:hover a {
+    color: #0070f3;
+}
