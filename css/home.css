@@ -23,18 +23,20 @@
 }
 
 #first {
-  width: 0.4fr;
-  margin-right: 20px; /* add space between elements */
+  width: 0.1fr;
+  max-width: 400px;
+  margin-right: 150px; /* add space between elements */
 }
 
 #second {
-  padding: 30px;
-  width: 0.4fr;
+  padding: 100px;
+  max-width: 500px;
+  margin-right: 150px; 
 }
 
 /* Modern text styling */
 .text-container {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .text-container h1 {
