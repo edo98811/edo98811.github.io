@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 projectCard.classList.add("projectCard");
 
                 projectCard.innerHTML = `
-                    <h2>${project.name}</h2>
+                    <h2>
+                        ${project.name}
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" class="github-logo">
+                    </h2>
                     <p>${project.description}</p>
                 `;
 

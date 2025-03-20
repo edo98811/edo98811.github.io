@@ -1,41 +1,61 @@
 [
   {
-    "name": "Cancer Cell Detection using Deep Learning",
-    "description": "A deep learning model for detecting cancer cells in medical images.",
-    "github": "https://github.com/edo98811/cancer-cell-detection"
+    "name": "rbioinfo r-package",
+    "description": "A collection of functions to help building reports in Rmarkdown.",
+    "github": "https://github.com/edo98811/helper-functions-rbioinfo.git"
   },
   {
-    "name": "IoT Platform for Measuring Fever",
-    "description": "An IoT-based platform to monitor body temperature remotely.",
-    "github": "https://github.com/edo98811/iot-fever-monitoring"
+    "name": "single cell pipeline",
+    "description": "",
+    "github": "https://github.com/edo98811/single-cell-pipeline"
   },
   {
-    "name": "3D Graphics Unity Exergame",
-    "description": "An interactive exergame built in Unity with 3D graphics.",
-    "github": "https://github.com/edo98811/unity-exergame"
+    "name": "Image perspective correction",
+    "description": "",
+    "github": "https://github.com/edo98811/python-perspective-correction.git"
   },
   {
-    "name": "Luxometer in Assembler",
-    "description": "A light intensity measurement tool written in Assembly language.",
-    "github": "https://github.com/edo98811/luxometer-assembler"
-  },
-  {
-    "name": "FS-Docker for Automatic Pipeline Execution",
+    "name": "fs-docker",
     "description": "A Docker-based system to automate execution pipelines.",
     "github": "https://github.com/edo98811/fs-docker"
   },
   {
-    "name": "Single Cell Pipeline",
-    "description": "A bioinformatics pipeline for single-cell RNA sequencing analysis.",
-    "github": "https://github.com/edo98811/single-cell-pipeline"
+    "name": "celescope processing",
+    "description": "A python package to simplify the processing of single-cell RNA-seq data.",
+    "github": "https://github.com/edo98811/celescope-processing"
   },
   {
-    "name": "Telescope Processing",
-    "description": "Data processing and analysis tools for astronomical telescope images.",
-    "github": "https://github.com/edo98811/telescope-processing"
+    "name": "Lux-meter",
+    "description": "A light intensity measurement tool written in Assembly language.",
+    "github": "https://github.com/edo98811/Lux-meter.git"
   },
   {
-    "name": "This Website",
+    "name": "IoT project",
+    "description": "An IoT-based platform to manage multiple sensors.",
+    "github": "https://github.com/edo98811/IoT-project.git"
+  },
+  {
+    "name": "Master thesis data analysis",
+    "description": "The code I wrote to analyze the data I used in my master thesis",
+    "github": "https://github.com/edo98811/master-thesis-data-analysis.git"
+  },
+  {
+    "name": "3D Graphics Exergame",
+    "description": "Made with Unity",
+    "github": "https://github.com/edo98811/Progetto-Unity-Git.git"
+  },
+  {
+    "name": "Temperature monitoring webapp",
+    "description": "",
+    "github": "https://github.com/edo98811/temperature-measure-webapp.git"
+  },
+  {
+    "name": "Deep learning image segmentation in Python notebooks",
+    "description": "",
+    "github": "https://github.com/edo98811/EIM-project.git"
+  },
+  {
+    "name": "This website",
     "description": "The source code of my personal website showcasing my projects.",
     "github": "https://github.com/edo98811/portfolio-website"
   }

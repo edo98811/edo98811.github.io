@@ -11,6 +11,27 @@
   justify-items: center; /* Centers items horizontally within the grid */
 }
 
+#wrapper {
+  width: 100%;
+  /* border: 1px solid black; */
+  overflow: hidden; /* add this to contain floated children */
+  padding: 30px;
+  display: flex;
+  flex-direction: row; /* Aligns children horizontally */
+  justify-content: center; /* Centers the children horizontally */
+  align-items: center; /* Centers the children vertically */
+}
+
+#first {
+  width: 0.4fr;
+  margin-right: 20px; /* add space between elements */
+}
+
+#second {
+  padding: 30px;
+  width: 0.4fr;
+}
+
 /* Modern text styling */
 .text-container {
   max-width: 600px;

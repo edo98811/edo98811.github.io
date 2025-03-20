@@ -1,12 +1,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap'); /* Import a modern font */
 
-.container {
+/* .container {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    background: #f4f4f4; /* Light background */
-    font-family: 'Inter', sans-serif; /* Apply new font */
+    background: #f4f4f4; 
+    font-family: 'Inter', sans-serif; Apply new font
+} */
+
+/* CV Card */
+.project-card {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+}
+.github-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .projectsGrid {
@@ -20,7 +44,7 @@
 /* Project Card */
 .projectCard {
     width: 100%;
-    padding: 40px 20px;
+    padding: 10px 0px;
     background: white;
     text-align: left;
     transition: background 0.3s ease, transform 0.2s ease-in-out;
