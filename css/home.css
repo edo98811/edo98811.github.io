@@ -17,6 +17,7 @@
   overflow: hidden; /* add this to contain floated children */
   padding: 30px;
   display: flex;
+  max-width: 100%; /* Prevents overflow */
   flex-direction: row; /* Aligns children horizontally */
   justify-content: center; /* Centers the children horizontally */
   align-items: center; /* Centers the children vertically */
@@ -91,6 +92,7 @@
   #wrapper {
     flex-direction: column; /* Stack elements vertically */
     text-align: center;
+    max-width: 100%; /* Prevents overflow */
   }
 
   #first {
