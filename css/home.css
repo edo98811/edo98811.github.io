@@ -76,14 +76,30 @@
   transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* Responsive Design */
+/* Responsive Design
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr; /* Stack elements on smaller screens */
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
   .text-container {
     max-width: 100%;
+  }
+} */
+@media (max-width: 768px) {
+  #wrapper {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+  }
+
+  #first {
+    margin-right: 0; /* Remove right margin for centering */
+    margin-bottom: 20px; /* Add space between elements */
+  }
+
+  #second {
+    margin-right: 0; /* Remove right margin */
+    padding: 50px; /* Reduce padding for better fit */
   }
 }
