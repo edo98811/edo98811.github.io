@@ -26,13 +26,13 @@
 #first {
   width: 0.1fr;
   max-width: 400px;
-  margin-right: 150px; /* add space between elements */
+  margin-right: 100px;/* add space between elements */
 }
 
 #second {
   padding: 100px;
   max-width: 500px;
-  margin-right: 150px; 
+  margin-right: 100px; 
 }
 
 /* Modern text styling */
@@ -93,16 +93,19 @@
     flex-direction: column; /* Stack elements vertically */
     text-align: center;
     max-width: 100%; /* Prevents overflow */
+    justify-content: center; /* Centers the children horizontally */
+    align-items: center; /* Centers the children vertically */
   }
 
   #first {
-    margin-right: 0; /* Remove right margin for centering */
     margin-bottom: 20px; /* Add space between elements */
     max-width: 100%;
+    text-align: center; /* Center text */
   }
 
   #second {
-    margin-right: 0; /* Remove right margin */
     padding: 50px; /* Reduce padding for better fit */
+    max-width: 100%;
+    text-align: center; /* Center text */
   }
 }
