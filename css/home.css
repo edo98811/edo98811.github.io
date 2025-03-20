@@ -98,6 +98,7 @@
   #first {
     margin-right: 0; /* Remove right margin for centering */
     margin-bottom: 20px; /* Add space between elements */
+    max-width: 100%;
   }
 
   #second {
