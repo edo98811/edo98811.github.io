@@ -38,5 +38,20 @@
       "name": "This Website",
       "description": "The source code of my personal website showcasing my projects.",
       "github": "https://github.com/edo98811/portfolio-website"
+    },
+    {
+      "name": "Deep learning image segmentation in Python notebooks",
+      "description": "A project to learn how to use deep learning for image segmentation.",
+      "github": "https://github.com/edo98811/EIM-project.git"
+    },  
+    {
+      "name": "Image perspective correction",
+      "description": "A simple app to correct ther perspective of images.",
+      "github": "https://github.com/edo98811/python-perspective-correction.git"
+    },
+    {
+      "name": "This website",
+      "description": "The source code of my personal website showcasing my projects.",
+      "github": "https://github.com/edo98811/edo98811.github.io.git"
     }
   ]

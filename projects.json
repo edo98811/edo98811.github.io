@@ -6,23 +6,18 @@
   },
   {
     "name": "single cell pipeline",
-    "description": "",
+    "description": "A pipeline to simplify the analysis of single-cell RNA-seq data.",
     "github": "https://github.com/edo98811/single-cell-pipeline"
   },
   {
-    "name": "Image perspective correction",
-    "description": "",
-    "github": "https://github.com/edo98811/python-perspective-correction.git"
-  },
-  {
     "name": "fs-docker",
-    "description": "A Docker-based system to automate execution pipelines.",
+    "description": "A Python package to automate execution of freesurfer pipelines using docker.",
     "github": "https://github.com/edo98811/fs-docker"
   },
   {
     "name": "celescope processing",
-    "description": "A python package to simplify the processing of single-cell RNA-seq data.",
-    "github": "https://github.com/edo98811/celescope-processing"
+    "description": "A Python package to simplify the processing of single-cell RNA-seq data.",
+    "github": "https://github.com/edo98811/celescope-preprocessing"
   },
   {
     "name": "Lux-meter",
@@ -46,17 +41,7 @@
   },
   {
     "name": "Temperature monitoring webapp",
-    "description": "",
+    "description": "A webapp based on Flask extended as univesity project.",
     "github": "https://github.com/edo98811/temperature-measure-webapp.git"
-  },
-  {
-    "name": "Deep learning image segmentation in Python notebooks",
-    "description": "",
-    "github": "https://github.com/edo98811/EIM-project.git"
-  },
-  {
-    "name": "This website",
-    "description": "The source code of my personal website showcasing my projects.",
-    "github": "https://github.com/edo98811/portfolio-website"
   }
 ]
