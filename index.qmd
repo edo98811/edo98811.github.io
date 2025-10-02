@@ -1,0 +1,18 @@
+---
+title: "Home"
+format: html
+hero:
+  image: "profile.jpg"    # Replace with your photo file
+  title: "Your Name Here" # Replace with your name
+  subtitle: "A short description about yourself goes here."
+---
+
+## Welcome
+
+::: {.about-hero}
+![Profile Photo](images//profile.png){width=400px style="border-radius:50%; margin-right:30px; float:left;"}
+
+I am **Edoardo Filippi**, a bioinformatician working in the lab of **Federico Marini**.  
+This is what I do: 
+I analyze biological data, develop pipelines for single-cell RNA-seq, and create reproducible reports and software tools for research projects.
+:::

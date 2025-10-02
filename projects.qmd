@@ -1,0 +1,72 @@
+---
+title: "Projects"
+format: html
+---
+
+Welcome! Here are some of my projects. Click the GitHub icon to see the source code.
+
+---
+
+## rbioinfo r-package
+A collection of functions to help building reports in Rmarkdown.  
+[GitHub 🔗](https://github.com/edo98811/helper-functions-rbioinfo.git)
+
+---
+
+## cdt_to_se
+An interface to convert Metabolon data table objects to SingleCellExperiment objects.  
+[GitHub 🔗](https://github.com/edo98811/metabolon_summarized_experiment.git)
+
+---
+
+## WiMa_app
+An application to represent our institute in the wissenschaftsmarkt 2025 in Mainz.  
+[GitHub 🔗](https://github.com/edo98811/WiMa2025.git)
+
+---
+
+## single cell pipeline
+A pipeline to simplify the analysis of single-cell RNA-seq data.  
+[GitHub 🔗](https://github.com/edo98811/single-cell-pipeline)
+
+---
+
+## fs-docker
+A Python package to automate execution of freesurfer pipelines using docker.  
+[GitHub 🔗](https://github.com/edo98811/fs-docker)
+
+---
+
+## celescope processing
+A Python package to simplify the processing of single-cell RNA-seq data.  
+[GitHub 🔗](https://github.com/edo98811/celescope-preprocessing)
+
+---
+
+## Lux-meter
+A light intensity measurement tool written in Assembly language.  
+[GitHub 🔗](https://github.com/edo98811/Lux-meter.git)
+
+---
+
+## IoT project
+An IoT-based platform to manage multiple sensors.  
+[GitHub 🔗](https://github.com/edo98811/IoT-project.git)
+
+---
+
+## Master thesis data analysis
+The code I wrote to analyze the data I used in my master thesis.  
+[GitHub 🔗](https://github.com/edo98811/master-thesis-data-analysis.git)
+
+---
+
+## 3D Graphics Exergame
+Made with Unity.  
+[GitHub 🔗](https://github.com/edo98811/Progetto-Unity-Git.git)
+
+---
+
+## Temperature monitoring webapp
+A webapp based on Flask extended as university project.  
+[GitHub 🔗](https://github.com/edo98811/temperature-measure-webapp.git)

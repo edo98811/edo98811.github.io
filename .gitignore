@@ -1,0 +1,26 @@
+# Quarto build output
+_site/
+*.html
+*.pdf
+*.docx
+*.epub
+
+# Quarto cache
+.quarto/
+
+# R and Python environments
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+*.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# MacOS files
+.DS_Store
+
+# Node modules
+node_modules/

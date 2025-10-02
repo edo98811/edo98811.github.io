@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "Me"
+  description: "A personal website built with Quarto"
+  site-url: https://your-website-url.example.com # change for RSS feed to work
+
+
+  navbar:
+    left:
+      - text: "Blog"
+        href: blog.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: "CV"
+        href: cv.qmd
+      - text: "About"
+        href: about.qmd
+    right:
+      - icon: github
+        href: https://github.com/yourusername
+      - icon: twitter
+        href: https://twitter.com/yourusername
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
