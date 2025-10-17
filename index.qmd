@@ -2,14 +2,13 @@
 title: "Home"
 format: html
 hero:
-  image: "profile.jpg"    # Replace with your photo file
-  title: "Your Name Here" # Replace with your name
-  subtitle: "A short description about yourself goes here."
+  image: "profile.jpg"  
+  title: "Personal Website Edoardo Filippi" 
+  subtitle: "I am a Bioinformatician in Federico Marini's Group."
 ---
 
 ## Welcome
-
-::: {.about-hero}
+§
 ![Profile Photo](images//profile.png){width=400px style="border-radius:50%; margin-right:30px; float:left;"}
 
 I am **Edoardo Filippi**, a bioinformatician working in the lab of **Federico Marini**.  
