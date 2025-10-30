@@ -6,7 +6,6 @@ website:
   description: "A personal website built with Quarto"
   site-url: https://edo98811.github.io/ # change for RSS feed to work
 
-
   navbar:
     left:
       - text: "Blog"
