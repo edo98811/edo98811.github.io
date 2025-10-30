@@ -26,3 +26,5 @@ __pycache__/
 node_modules/
 /.quarto/
 **/*.quarto_ipynb
+
+ignore
