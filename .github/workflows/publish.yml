@@ -17,13 +17,7 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render
-        run: quarto render
-
-      - name: Create .nojekyll file
-        run: touch .nojekyll
-
-      - name: Publish
+      - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
