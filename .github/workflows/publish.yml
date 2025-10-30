@@ -15,7 +15,7 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      - run: touch .nojekyll  
+      - run: touch .nojekyll  # no jekill
 
       - name: Publish
         uses: quarto-dev/quarto-actions/publish@v2
