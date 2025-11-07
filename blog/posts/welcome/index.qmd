@@ -1,6 +1,6 @@
 ---
 title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+author: "Edoardo Filippi"
 date: "2025-09-29"
 categories: [news]
 ---
