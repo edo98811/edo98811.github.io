@@ -1,177 +1,163 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
     "title": "Projects",
     "section": "",
     "text": "Welcome! Here are some of my projects. Click the GitHub icon to see the source code."
   },
   {
-    "objectID": "projects.html#maps-posters",
-    "href": "projects.html#maps-posters",
+    "objectID": "projects/index.html#deutschlernen",
+    "href": "projects/index.html#deutschlernen",
+    "title": "Projects",
+    "section": "Deutschlernen",
+    "text": "Deutschlernen\nAnki inspierd python application developed with PyQt. GitHub 🔗"
+  },
+  {
+    "objectID": "projects/index.html#maps-posters",
+    "href": "projects/index.html#maps-posters",
     "title": "Projects",
     "section": "Maps posters",
     "text": "Maps posters\nWhen you want to nice map of a place that’s dear to you but don’t want to pay. GitHub 🔗"
   },
   {
-    "objectID": "projects.html#rbioinfo-r-package",
-    "href": "projects.html#rbioinfo-r-package",
-    "title": "Projects",
-    "section": "rbioinfo r-package",
-    "text": "rbioinfo r-package\nA collection of functions to help building reports in Rmarkdown or quarto.\nGitHub 🔗"
-  },
-  {
-    "objectID": "projects.html#rbioinfo-r-package-1",
-    "href": "projects.html#rbioinfo-r-package-1",
+    "objectID": "projects/index.html#rbioinfo-r-package",
+    "href": "projects/index.html#rbioinfo-r-package",
     "title": "Projects",
     "section": "rbioinfo r-package",
     "text": "rbioinfo r-package\nA collection of functions to help building reports in Rmarkdown.\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#cdt_to_se",
-    "href": "projects.html#cdt_to_se",
+    "objectID": "projects/index.html#metabolonize",
+    "href": "projects/index.html#metabolonize",
     "title": "Projects",
-    "section": "cdt_to_se",
-    "text": "cdt_to_se\nAn interface to convert Metabolon data table objects to SingleCellExperiment objects.\nGitHub 🔗"
+    "section": "Metabolonize",
+    "text": "Metabolonize\nAn interface to convert Metabolon data table objects to SingleCellExperiment objects.\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#wima_app",
-    "href": "projects.html#wima_app",
+    "objectID": "projects/index.html#perspective-correction-and-object-annotation",
+    "href": "projects/index.html#perspective-correction-and-object-annotation",
+    "title": "Projects",
+    "section": "Perspective correction and object annotation",
+    "text": "Perspective correction and object annotation\nTo assist in the boring task for a the data analysis needed for a paper. Publication: GitHub 🔗"
+  },
+  {
+    "objectID": "projects/index.html#wima_app",
+    "href": "projects/index.html#wima_app",
     "title": "Projects",
     "section": "WiMa_app",
-    "text": "WiMa_app\nAn application to represent our institute in the wissenschaftsmarkt 2025 in Mainz.\nGitHub 🔗"
+    "text": "WiMa_app\nAn application to represent our institute in the wissenschaftsmarkt 2025 in Mainz. Developed with:\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#single-cell-pipeline",
-    "href": "projects.html#single-cell-pipeline",
+    "objectID": "projects/index.html#single-cell-pipeline",
+    "href": "projects/index.html#single-cell-pipeline",
     "title": "Projects",
     "section": "single cell pipeline",
     "text": "single cell pipeline\nA pipeline to simplify the analysis of single-cell RNA-seq data.\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#fs-docker",
-    "href": "projects.html#fs-docker",
+    "objectID": "projects/index.html#fs-docker",
+    "href": "projects/index.html#fs-docker",
     "title": "Projects",
     "section": "fs-docker",
     "text": "fs-docker\nA Python package to automate execution of freesurfer pipelines using docker.\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#celescope-processing",
-    "href": "projects.html#celescope-processing",
+    "objectID": "projects/index.html#celescope-processing",
+    "href": "projects/index.html#celescope-processing",
     "title": "Projects",
     "section": "celescope processing",
-    "text": "celescope processing\nA Python package to simplify the processing of single-cell RNA-seq data.\nGitHub 🔗"
+    "text": "celescope processing\nA Python package to simplify the processing of single-cell RNA-seq data (my first interaction with bioinformatics).\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#lux-meter",
-    "href": "projects.html#lux-meter",
+    "objectID": "projects/index.html#lux-meter",
+    "href": "projects/index.html#lux-meter",
     "title": "Projects",
     "section": "Lux-meter",
-    "text": "Lux-meter\nA light intensity measurement tool written in Assembly language.\nGitHub 🔗"
+    "text": "Lux-meter\nA light intensity measurement tool written in Assembly language, made to work on an atmega.\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#iot-project",
-    "href": "projects.html#iot-project",
+    "objectID": "projects/index.html#iot-project",
+    "href": "projects/index.html#iot-project",
     "title": "Projects",
     "section": "IoT project",
     "text": "IoT project\nAn IoT-based platform to manage multiple sensors.\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#master-thesis-data-analysis",
-    "href": "projects.html#master-thesis-data-analysis",
+    "objectID": "projects/index.html#master-thesis-data-analysis",
+    "href": "projects/index.html#master-thesis-data-analysis",
     "title": "Projects",
     "section": "Master thesis data analysis",
     "text": "Master thesis data analysis\nThe code I wrote to analyze the data I used in my master thesis.\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#d-graphics-exergame",
-    "href": "projects.html#d-graphics-exergame",
+    "objectID": "projects/index.html#d-graphics-exergame",
+    "href": "projects/index.html#d-graphics-exergame",
     "title": "Projects",
     "section": "3D Graphics Exergame",
     "text": "3D Graphics Exergame\nMade with Unity.\nGitHub 🔗"
   },
   {
-    "objectID": "projects.html#temperature-monitoring-webapp",
-    "href": "projects.html#temperature-monitoring-webapp",
+    "objectID": "projects/index.html#temperature-monitoring-webapp",
+    "href": "projects/index.html#temperature-monitoring-webapp",
     "title": "Projects",
     "section": "Temperature monitoring webapp",
     "text": "Temperature monitoring webapp\nA webapp based on Flask extended as university project.\nGitHub 🔗"
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Edoardo Filippis Blog",
+    "objectID": "blog/posts/Snakemake/index.html",
+    "href": "blog/posts/Snakemake/index.html",
+    "title": "How I learned snakemake",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 2, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 29, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+    "text": "it is a python based workflow management tool that uses rules to build a directed acyclic graph. It means that, you write a rule, you set a list of inputs of the rule, a list of outputs, and how to go from these input to these output.\nThe workflow is: You decide the first rule to run. the first run looks at what it needs, is it already created?\nyes → Nothing is done\nno → looks which rule generates that output.\nRepeats this process until the workflow is finished: no more rules or has all that it needs (or error of course). TO do this it buids a DAG.\nA Rule it is a node of the DAG. it is the core element of snakemake. The built graph is then used to determine the order in which the rules are rum.\nI can also write top level Python if i need to, outside of any rule. ## Rules\nThey are the building block of a snakemake workflow.\nRules must have an input, an output and can contain different elements, a python script or shell sections. Snakemake only looks at input and output when building the DAG. It looks at the input of each rule and checks if it can be built from other rules or is on the disk.\nrule myrule:\n    input:\n        \"path/to/inputfile\",\n        \"path/to/other/inputfile\",\n    output:\n        \"path/to/outputfile\",\n        \"path/to/another/outputfile\",\n    shell:\n        \"somecommand{input}{output}\""
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "blog/posts/Snakemake/index.html#logic-of-snakemake",
+    "href": "blog/posts/Snakemake/index.html#logic-of-snakemake",
+    "title": "How I learned snakemake",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "it is a python based workflow management tool that uses rules to build a directed acyclic graph. It means that, you write a rule, you set a list of inputs of the rule, a list of outputs, and how to go from these input to these output.\nThe workflow is: You decide the first rule to run. the first run looks at what it needs, is it already created?\nyes → Nothing is done\nno → looks which rule generates that output.\nRepeats this process until the workflow is finished: no more rules or has all that it needs (or error of course). TO do this it buids a DAG.\nA Rule it is a node of the DAG. it is the core element of snakemake. The built graph is then used to determine the order in which the rules are rum.\nI can also write top level Python if i need to, outside of any rule. ## Rules\nThey are the building block of a snakemake workflow.\nRules must have an input, an output and can contain different elements, a python script or shell sections. Snakemake only looks at input and output when building the DAG. It looks at the input of each rule and checks if it can be built from other rules or is on the disk.\nrule myrule:\n    input:\n        \"path/to/inputfile\",\n        \"path/to/other/inputfile\",\n    output:\n        \"path/to/outputfile\",\n        \"path/to/another/outputfile\",\n    shell:\n        \"somecommand{input}{output}\""
+  },
+  {
+    "objectID": "blog/posts/Snakemake/index.html#directives",
+    "href": "blog/posts/Snakemake/index.html#directives",
+    "title": "How I learned snakemake",
+    "section": "Directives",
+    "text": "Directives\nA directive is a keyword inside a rule that tells Snakemake how to execute or manage that rule.\nA thing that I often find its missing in the basic “how to” is a short explanation of each element you can have, in this case, in a snakemake rule, so here it is:\ninput: What the rule needs, this must be either the output of another rule or a file present on the disk\noutput: in the output i can also have dictionaries or multiple variables, i can refer to them in the rest of the rule but attention! they are not usful for anything else, to decide wether to run a workflow or not the actual files on the disk are searched\nshell: shell code to be run\nconda link to a conda.yml to be used to build the environment where snakemake will be run\nscript: an external python script\nrun: python code to execute.\nthreads: number of threads the rule can use.\nlog: file to use for logging: https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#log-files\nparams: parameters or constants to use in commands in the rule.\nresources: limits on CPU, memory or other resources.\nThere are keywords I can use specific to snakemake, for example expand: a snakemake helper that I can use in the input field, it will make a rule for each element of an iterable that was given to it, for example:\nexpand(\"results/{sample}/quant.sf\", sample=samples)"
+  },
+  {
+    "objectID": "blog/posts/Snakemake/index.html#wildcards",
+    "href": "blog/posts/Snakemake/index.html#wildcards",
+    "title": "How I learned snakemake",
+    "section": "Wildcards",
+    "text": "Wildcards\nWildcards can be used to build generalizable rules, they are treated as a wildcard in the regular expression when during the building of the DAG. they collect the matched value, which can be then used in the rest of the rule. In other sections of the workflow the wildcards are passed as argument, i can call the argument however I want, normally it is wc.\nThey are just placeholders, snakemake then checks all the files on the disk, the rule is executed only if the file is missing.\nrule complex_conversion:\ninput:\n    \"{dataset}/inputfile\"\noutput:\n    \"{dataset}/file.{group}.txt\"\nshell:\n    \"somecommand --group{wildcards.group} &lt;{input} &gt;{output}\"\nI can use wildcards in functions and return them as dict. the unpack wrapper lets me set the the dict bindings as parameters i can use in the rule.\nThe fields input, output, params can also be variables defined, so that i can access them in the rest of the workflow, like this:\nrule salmon_quant:\n    input:\n        csv=f\"{ANALYSIS_NAME}_samples.csv\"\n    ...\n        run:\n          SAMPLES = pd.read_csv(input.csv)"
+  },
+  {
+    "objectID": "blog/posts/Snakemake/index.html#first-level-keywords",
+    "href": "blog/posts/Snakemake/index.html#first-level-keywords",
+    "title": "How I learned snakemake",
+    "section": "First level keywords",
+    "text": "First level keywords\nThere are many first level keywords, which fall under 4 categories:\n\nHooks – run code at certain workflow stages (onstart, onerror, etc.).\nConfiguration – manage workflow parameters and structure (configfile, include, ruleorder).\nExecution control – resources, threads, containers (threads, resources, localrules).\nReporting / visualization – produce workflow summaries (report, rulegraph)."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Random facts",
+    "section": "",
+    "text": "How I learned snakemake\n\n\n\nnews\n\ncode\n\ntutorial\n\n\n\n\n\n\n\n\n\nOct 2, 2025\n\n\nEdoardo Filippi\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "Me",
     "section": "",
-    "text": "§ \nI am Edoardo Filippi, a bioinformatician working in the lab of Federico Marini.\nThis is what I do: I analyze biological data, develop pipelines for single-cell RNA-seq, and create reproducible reports and software tools for research projects. :::"
+    "text": "Profile Photo\n\n\n\n\n\nI am Bioinformatician in the lab of Federico Marini\nI analyze biological data, develop pipelines for single-cell RNA-seq, and create reproducible reports and software tools for research projects."
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Home",
+    "objectID": "index.html#edoardo-filippi",
+    "href": "index.html#edoardo-filippi",
+    "title": "Me",
     "section": "",
-    "text": "§ \nI am Edoardo Filippi, a bioinformatician working in the lab of Federico Marini.\nThis is what I do: I analyze biological data, develop pipelines for single-cell RNA-seq, and create reproducible reports and software tools for research projects. :::"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "Biomedical Engineer & Bioinformatician\n\n\n\n\nM.Sc. in Biomedical Engineering (Medical Informatics) – Politecnico di Torino (2021–2023)\n\nB.Sc. in Biomedical Engineering – Politecnico di Torino (2017–2021)\n\n\n\n\n\n\nBioinformatician – Universitätsmedizin Mainz (2024–Present)\nWorking on bioinformatics pipelines and NGS data analysis.\nResearch Assistant – Universitätsmedizin Mainz (2023–2024)\nAssisted in biomedical research projects and data analysis.\nResearch Assistant (Master’s Thesis) – IBEB Lisbon (2022–2023)\nConducted research for Master’s thesis, analyzed experimental data.\nInternship (Bachelor’s Thesis) – LINKS Foundation, Torino (2020–2021)\nCompleted Bachelor thesis and gained practical experience in biomedical projects.\n\n\n\n\n\n\nProgramming: Python, R, C#, Bash, MATLAB\n\nSoftware: Flask, Docker, Linux, Git CI/CD, LabVIEW, Simulink\n\nMachine Learning: scikit-learn, PyTorch, pandas, numpy\n\nBioinformatics: NGS data analysis (R)\n\n\n\n\n\n\nItalian: Native\n\nEnglish: C1\n\nGerman: C1"
-  },
-  {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "M.Sc. in Biomedical Engineering (Medical Informatics) – Politecnico di Torino (2021–2023)\n\nB.Sc. in Biomedical Engineering – Politecnico di Torino (2017–2021)"
-  },
-  {
-    "objectID": "cv.html#experience",
-    "href": "cv.html#experience",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "Bioinformatician – Universitätsmedizin Mainz (2024–Present)\nWorking on bioinformatics pipelines and NGS data analysis.\nResearch Assistant – Universitätsmedizin Mainz (2023–2024)\nAssisted in biomedical research projects and data analysis.\nResearch Assistant (Master’s Thesis) – IBEB Lisbon (2022–2023)\nConducted research for Master’s thesis, analyzed experimental data.\nInternship (Bachelor’s Thesis) – LINKS Foundation, Torino (2020–2021)\nCompleted Bachelor thesis and gained practical experience in biomedical projects."
-  },
-  {
-    "objectID": "cv.html#technical-skills",
-    "href": "cv.html#technical-skills",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "Programming: Python, R, C#, Bash, MATLAB\n\nSoftware: Flask, Docker, Linux, Git CI/CD, LabVIEW, Simulink\n\nMachine Learning: scikit-learn, PyTorch, pandas, numpy\n\nBioinformatics: NGS data analysis (R)"
-  },
-  {
-    "objectID": "cv.html#languages",
-    "href": "cv.html#languages",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "Italian: Native\n\nEnglish: C1\n\nGerman: C1"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Contact Me\nYou can reach me through the following channels:\n\n📧 Email: Edoardo.filippi@uni-mainz.de\n\n🐙 GitHub: edo98811\n\n💼 LinkedIn: Edoardo Filippi"
+    "text": "I am Bioinformatician in the lab of Federico Marini\nI analyze biological data, develop pipelines for single-cell RNA-seq, and create reproducible reports and software tools for research projects."
   }
 ]

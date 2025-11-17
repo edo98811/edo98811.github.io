@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Me</title>
+<link>https://edo98811.github.io/blog/</link>
+<atom:link href="https://edo98811.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>Personal website of Edoardo Filippi</description>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Thu, 02 Oct 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>How I learned snakemake</title>
+  <dc:creator>Edoardo Filippi</dc:creator>
+  <link>https://edo98811.github.io/blog/posts/Snakemake/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="logic-of-snakemake" class="level2">
+<h2 class="anchored" data-anchor-id="logic-of-snakemake">Logic of snakemake:</h2>
+<p>it is a python based workflow management tool that uses rules to build a directed acyclic graph. It means that, you write a rule, you set a list of inputs of the rule, a list of outputs, and how to go from these input to these output.</p>
+<p>The workflow is: You decide the first rule to run. the first run looks at what it needs, is it already created?</p>
+<p>yes → Nothing is done</p>
+<p>no → looks which rule generates that output.</p>
+<p>Repeats this process until the workflow is finished: no more rules or has all that it needs (or error of course). TO do this it buids a DAG.</p>
+<p>A Rule it is a node of the DAG. it is the core element of snakemake. The built graph is then used to determine the order in which the rules are rum.</p>
+<p>I can also write top level Python if i need to, outside of any rule. ## Rules</p>
+<p>They are the building block of a snakemake workflow.</p>
+<p>Rules must have an input, an output and can contain different elements, a python script or shell sections. Snakemake only looks at input and output when building the DAG. It looks at the input of each rule and checks if it can be built from other rules or is on the disk.</p>
+<pre><code>rule myrule:
+    input:
+        "path/to/inputfile",
+        "path/to/other/inputfile",
+    output:
+        "path/to/outputfile",
+        "path/to/another/outputfile",
+    shell:
+        "somecommand{input}{output}"</code></pre>
+</section>
+<section id="directives" class="level2">
+<h2 class="anchored" data-anchor-id="directives">Directives</h2>
+<p>A directive is a keyword inside a rule that tells Snakemake how to execute or manage that rule.</p>
+<p>A thing that I often find its missing in the basic “how to” is a short explanation of each element you can have, in this case, in a snakemake rule, so here it is:</p>
+<p><code>input:</code> What the rule needs, this must be either the output of another rule or a file present on the disk</p>
+<p><code>output:</code> in the output i can also have dictionaries or multiple variables, i can refer to them in the rest of the rule but attention! they are not usful for anything else, to decide wether to run a workflow or not the actual files on the disk are searched</p>
+<p><code>shell:</code> shell code to be run</p>
+<p><code>conda</code> link to a conda.yml to be used to build the environment where snakemake will be run</p>
+<p><code>script:</code> an external python script</p>
+<p><code>run:</code> python code to execute.</p>
+<p><code>threads:</code> number of threads the rule can use.</p>
+<p><code>log:</code> file to use for logging: https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#log-files</p>
+<p><code>params</code>: parameters or constants to use in commands in the rule.</p>
+<p><code>resources</code>: limits on CPU, memory or other resources.</p>
+<p>There are keywords I can use specific to snakemake, for example <code>expand</code>: a snakemake helper that I can use in the input field, it will make a rule for each element of an iterable that was given to it, for example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb2-1">expand<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"results/{sample}/quant.sf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> sample<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>samples<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div></div>
+</section>
+<section id="wildcards" class="level2">
+<h2 class="anchored" data-anchor-id="wildcards">Wildcards</h2>
+<p>Wildcards can be used to build generalizable rules, they are treated as a wildcard in the regular expression when during the building of the DAG. they collect the matched value, which can be then used in the rest of the rule. In other sections of the workflow the wildcards are passed as argument, i can call the argument however I want, normally it is wc.</p>
+<p>They are just placeholders, snakemake then checks all the files on the disk, the rule is executed only if the file is missing.</p>
+<pre><code>rule complex_conversion:
+input:
+    "{dataset}/inputfile"
+output:
+    "{dataset}/file.{group}.txt"
+shell:
+    "somecommand --group{wildcards.group} &lt;{input} &gt;{output}"</code></pre>
+<p>I can use wildcards in functions and return them as dict. the unpack wrapper lets me set the the dict bindings as parameters i can use in the rule.</p>
+<p>The fields input, output, params can also be variables defined, so that i can access them in the rest of the workflow, like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">rule salmon_quant:</span>
+<span id="cb4-2">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">input</span>:</span>
+<span id="cb4-3">        csv<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>ANALYSIS_NAME<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">_samples.csv"</span></span>
+<span id="cb4-4">    ...</span>
+<span id="cb4-5">        run:</span>
+<span id="cb4-6">          SAMPLES <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.read_csv(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">input</span>.csv)</span></code></pre></div></div>
+</section>
+<section id="first-level-keywords" class="level2">
+<h2 class="anchored" data-anchor-id="first-level-keywords">First level keywords</h2>
+<p>There are many first level keywords, which fall under 4 categories:</p>
+<ul>
+<li><strong>Hooks</strong> – run code at certain workflow stages (onstart, onerror, etc.).</li>
+<li><strong>Configuration</strong> – manage workflow parameters and structure (configfile, include, ruleorder).</li>
+<li><strong>Execution control</strong> – resources, threads, containers (threads, resources, localrules).</li>
+<li><strong>Reporting / visualization</strong> – produce workflow summaries (report, rulegraph).</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>code</category>
+  <category>tutorial</category>
+  <guid>https://edo98811.github.io/blog/posts/Snakemake/</guid>
+  <pubDate>Thu, 02 Oct 2025 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

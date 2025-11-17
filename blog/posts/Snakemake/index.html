@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2025-09-29">
+<meta name="author" content="Edoardo Filippi">
+<meta name="dcterms.date" content="2025-10-02">
 
-<title>Welcome To My Blog – Me</title>
+<title>How I learned snakemake – Me</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,19 +107,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Me</span>
     </a>
   </div>
@@ -95,30 +128,21 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> 
+    <a class="nav-link" href="../../../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> 
+    <a class="nav-link" href="../../../CV/index.html"> 
 <span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/yourusername"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/yourusername"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/edo98811"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -133,9 +157,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">How I learned snakemake</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">news</div>
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">tutorial</div>
               </div>
                   </div>
   </div>
@@ -146,14 +172,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
+               <p>Edoardo Filippi </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 29, 2025</p>
+        <p class="date">October 2, 2025</p>
       </div>
     </div>
     
@@ -164,7 +190,18 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#logic-of-snakemake" id="toc-logic-of-snakemake" class="nav-link active" data-scroll-target="#logic-of-snakemake">Logic of snakemake:</a></li>
+  <li><a href="#directives" id="toc-directives" class="nav-link" data-scroll-target="#directives">Directives</a></li>
+  <li><a href="#wildcards" id="toc-wildcards" class="nav-link" data-scroll-target="#wildcards">Wildcards</a></li>
+  <li><a href="#first-level-keywords" id="toc-first-level-keywords" class="nav-link" data-scroll-target="#first-level-keywords">First level keywords</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -172,11 +209,76 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<section id="logic-of-snakemake" class="level2">
+<h2 class="anchored" data-anchor-id="logic-of-snakemake">Logic of snakemake:</h2>
+<p>it is a python based workflow management tool that uses rules to build a directed acyclic graph. It means that, you write a rule, you set a list of inputs of the rule, a list of outputs, and how to go from these input to these output.</p>
+<p>The workflow is: You decide the first rule to run. the first run looks at what it needs, is it already created?</p>
+<p>yes → Nothing is done</p>
+<p>no → looks which rule generates that output.</p>
+<p>Repeats this process until the workflow is finished: no more rules or has all that it needs (or error of course). TO do this it buids a DAG.</p>
+<p>A Rule it is a node of the DAG. it is the core element of snakemake. The built graph is then used to determine the order in which the rules are rum.</p>
+<p>I can also write top level Python if i need to, outside of any rule. ## Rules</p>
+<p>They are the building block of a snakemake workflow.</p>
+<p>Rules must have an input, an output and can contain different elements, a python script or shell sections. Snakemake only looks at input and output when building the DAG. It looks at the input of each rule and checks if it can be built from other rules or is on the disk.</p>
+<pre><code>rule myrule:
+    input:
+        "path/to/inputfile",
+        "path/to/other/inputfile",
+    output:
+        "path/to/outputfile",
+        "path/to/another/outputfile",
+    shell:
+        "somecommand{input}{output}"</code></pre>
+</section>
+<section id="directives" class="level2">
+<h2 class="anchored" data-anchor-id="directives">Directives</h2>
+<p>A directive is a keyword inside a rule that tells Snakemake how to execute or manage that rule.</p>
+<p>A thing that I often find its missing in the basic “how to” is a short explanation of each element you can have, in this case, in a snakemake rule, so here it is:</p>
+<p><code>input:</code> What the rule needs, this must be either the output of another rule or a file present on the disk</p>
+<p><code>output:</code> in the output i can also have dictionaries or multiple variables, i can refer to them in the rest of the rule but attention! they are not usful for anything else, to decide wether to run a workflow or not the actual files on the disk are searched</p>
+<p><code>shell:</code> shell code to be run</p>
+<p><code>conda</code> link to a conda.yml to be used to build the environment where snakemake will be run</p>
+<p><code>script:</code> an external python script</p>
+<p><code>run:</code> python code to execute.</p>
+<p><code>threads:</code> number of threads the rule can use.</p>
+<p><code>log:</code> file to use for logging: https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#log-files</p>
+<p><code>params</code>: parameters or constants to use in commands in the rule.</p>
+<p><code>resources</code>: limits on CPU, memory or other resources.</p>
+<p>There are keywords I can use specific to snakemake, for example <code>expand</code>: a snakemake helper that I can use in the input field, it will make a rule for each element of an iterable that was given to it, for example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>expand<span class="op">(</span><span class="st">"results/{sample}/quant.sf"</span><span class="op">,</span> sample<span class="op">=</span>samples<span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="wildcards" class="level2">
+<h2 class="anchored" data-anchor-id="wildcards">Wildcards</h2>
+<p>Wildcards can be used to build generalizable rules, they are treated as a wildcard in the regular expression when during the building of the DAG. they collect the matched value, which can be then used in the rest of the rule. In other sections of the workflow the wildcards are passed as argument, i can call the argument however I want, normally it is wc.</p>
+<p>They are just placeholders, snakemake then checks all the files on the disk, the rule is executed only if the file is missing.</p>
+<pre><code>rule complex_conversion:
+input:
+    "{dataset}/inputfile"
+output:
+    "{dataset}/file.{group}.txt"
+shell:
+    "somecommand --group{wildcards.group} &lt;{input} &gt;{output}"</code></pre>
+<p>I can use wildcards in functions and return them as dict. the unpack wrapper lets me set the the dict bindings as parameters i can use in the rule.</p>
+<p>The fields input, output, params can also be variables defined, so that i can access them in the rest of the workflow, like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>rule salmon_quant:</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">input</span>:</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        csv<span class="op">=</span><span class="ss">f"</span><span class="sc">{</span>ANALYSIS_NAME<span class="sc">}</span><span class="ss">_samples.csv"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    ...</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        run:</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>          SAMPLES <span class="op">=</span> pd.read_csv(<span class="bu">input</span>.csv)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="first-level-keywords" class="level2">
+<h2 class="anchored" data-anchor-id="first-level-keywords">First level keywords</h2>
+<p>There are many first level keywords, which fall under 4 categories:</p>
+<ul>
+<li><strong>Hooks</strong> – run code at certain workflow stages (onstart, onerror, etc.).</li>
+<li><strong>Configuration</strong> – manage workflow parameters and structure (configfile, include, ruleorder).</li>
+<li><strong>Execution control</strong> – resources, threads, containers (threads, resources, localrules).</li>
+<li><strong>Reporting / visualization</strong> – produce workflow summaries (report, rulegraph).</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -580,6 +682,19 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Edoardo Filippi - 2024</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 

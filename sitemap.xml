@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://edo98811.github.io/projects.html</loc>
-    <lastmod>2025-11-04T15:27:36.634Z</lastmod>
+    <loc>https://edo98811.github.io/projects/index.html</loc>
+    <lastmod>2025-11-17T21:16:02.942Z</lastmod>
   </url>
   <url>
-    <loc>https://edo98811.github.io/blog.html</loc>
-    <lastmod>2025-11-04T15:27:36.633Z</lastmod>
+    <loc>https://edo98811.github.io/blog/posts/Snakemake/index.html</loc>
+    <lastmod>2025-11-17T21:16:02.941Z</lastmod>
   </url>
   <url>
-    <loc>https://edo98811.github.io/posts/welcome/index.html</loc>
-    <lastmod>2025-11-04T15:27:36.634Z</lastmod>
+    <loc>https://edo98811.github.io/CV/index.html</loc>
+    <lastmod>2025-11-17T21:16:02.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edo98811.github.io/blog/index.html</loc>
+    <lastmod>2025-11-17T21:16:02.941Z</lastmod>
   </url>
   <url>
     <loc>https://edo98811.github.io/index.html</loc>
-    <lastmod>2025-11-04T15:27:36.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://edo98811.github.io/posts/post-with-code/index.html</loc>
-    <lastmod>2025-11-04T15:27:36.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://edo98811.github.io/cv.html</loc>
-    <lastmod>2025-11-04T15:27:36.633Z</lastmod>
-  </url>
-  <url>
-    <loc>https://edo98811.github.io/about.html</loc>
-    <lastmod>2025-11-04T15:27:36.633Z</lastmod>
+    <lastmod>2025-11-17T21:16:02.942Z</lastmod>
   </url>
 </urlset>
