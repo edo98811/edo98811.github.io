@@ -1,26 +1,44 @@
 project:
   type: website
 
+  preview: 
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!etc/"
+
+  resources:
+    - "files/**"
+    - "etc/**"
+
 website:
   title: "Me"
-  description: "A personal website built with Quarto"
-  site-url: https://edo98811.github.io/ # change for RSS feed to work
+  description: "Personal website of Edoardo Filippi"
+  site-url: https://edo98811.github.io/ 
 
   navbar:
     left:
       - text: "Blog"
-        href: blog.qmd
+        href: blog/index.qmd
       - text: "Projects"
-        href: projects.qmd
+        href: projects/index.qmd
       - text: "CV"
-        href: cv.qmd
-      - text: "About"
-        href: about.qmd
+        href: CV/index.qmd
     right:
       - icon: github
-        href: https://github.com/yourusername
-      - icon: twitter
-        href: https://twitter.com/yourusername
+        href: https://github.com/edo98811
+  page-footer: 
+      left: |
+        Edoardo Filippi - 2024
+      center: |
+      right: |
+        Built with [Quarto](https://quarto.org)
+
 
 format:
   html:

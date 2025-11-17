@@ -1,0 +1,109 @@
+---
+title: "How I learned snakemake"
+author: "Edoardo Filippi"
+date: "2025-10-02"
+categories: [news, code, tutorial]
+---
+
+## Logic of snakemake: 
+
+it is a python based workflow management tool that uses rules to build a directed acyclic graph. It means that, you write a rule, you set a list of inputs of the rule, a list of outputs, and how to go from these input to these output. 
+
+The workflow is: You decide the first rule to run. the first run looks at what it needs, is it already created? 
+
+yes → Nothing is done 
+
+no → looks which rule generates that output.  
+
+Repeats this process until the workflow is finished: no more rules or has all that it needs (or error of course). TO do this it buids a DAG.
+
+A Rule it is a node of the DAG. it is the core element of snakemake. The built graph is then used to determine the order in which the rules are rum.
+
+I can also write top level Python if i need to, outside of any rule.
+## Rules
+
+They are the building block of a snakemake workflow.
+
+Rules must have an input, an output and can contain different elements, a python script or shell sections. Snakemake only looks at input and output when building the DAG. It looks at the input of each rule and checks if it can be built from other rules or is on the disk.
+
+```
+rule myrule:
+    input:
+        "path/to/inputfile",
+        "path/to/other/inputfile",
+    output:
+        "path/to/outputfile",
+        "path/to/another/outputfile",
+    shell:
+        "somecommand{input}{output}"
+```
+
+## Directives
+
+A directive is a keyword inside a rule that tells Snakemake how to execute or manage that rule.
+
+A thing that I often find its missing in the basic "how to" is a short explanation of each element you can have, in this case, in a snakemake rule, so here it is:
+
+`input:` What the rule needs, this must be either the output of another rule or a file present on the disk
+
+`output:` in the output i can also have dictionaries or multiple variables, i can refer to them in the rest of the rule but attention! they are not usful for anything else, to decide wether to run a workflow or not the actual files on the disk are searched
+
+`shell:` shell code to be run
+
+`conda` link to a conda.yml to be used to build the environment where snakemake will be run
+
+`script:` an external python script
+
+`run:` python code to execute.
+
+`threads:` number of threads the rule can use.
+
+`log:` file to use for logging:  https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#log-files
+
+`params`: parameters or constants to use in commands in the rule.
+
+`resources`: limits on CPU, memory or other resources.
+
+There are keywords I can use specific to snakemake, for example `expand`: a snakemake helper that I can use in the input field, it will make a rule for each element of an iterable that was given to it, for example: 
+
+```c
+expand("results/{sample}/quant.sf", sample=samples)
+```
+
+## Wildcards
+
+Wildcards can be used to build generalizable rules, they are treated as a wildcard in the regular expression when during the building of the DAG. they collect the matched value, which can be then used in the rest of the rule. In other sections of the workflow the wildcards are passed as argument, i can call the argument however I want, normally it is wc.
+
+They are just placeholders, snakemake then checks all the files on the disk, the rule is executed only if the file is missing.
+
+```
+rule complex_conversion:
+input:
+	"{dataset}/inputfile"
+output:
+	"{dataset}/file.{group}.txt"
+shell:
+	"somecommand --group{wildcards.group} <{input} >{output}"
+```
+
+I can use wildcards in functions and return them as dict. the unpack wrapper lets me set the the dict bindings as parameters i can use in the rule. 
+
+The fields input, output, params can also be variables defined, so that i can access them in the rest of the workflow, like this:
+
+```python
+rule salmon_quant:
+    input:
+        csv=f"{ANALYSIS_NAME}_samples.csv"
+    ...
+		run:
+	      SAMPLES = pd.read_csv(input.csv)
+```
+
+## First level keywords
+There are many first level keywords, which fall under 4 categories:
+
+- **Hooks** – run code at certain workflow stages (onstart, onerror, etc.).
+- **Configuration** – manage workflow parameters and structure (configfile, include, ruleorder).
+- **Execution control** – resources, threads, containers (threads, resources, localrules).
+- **Reporting / visualization** – produce workflow summaries (report, rulegraph).
+

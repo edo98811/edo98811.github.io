@@ -1,17 +1,33 @@
 ---
-title: "Home"
+# title: "Welcome"
 format: html
+  # html:
+  #   css: index_styles.css
 hero:
   image: "profile.jpg"  
   title: "Personal Website Edoardo Filippi" 
-  subtitle: "I am a Bioinformatician in Federico Marini's Group."
----
 
-## Welcome
-§
+---
+<!-- 
+
 ![Profile Photo](images//profile.png){width=400px style="border-radius:50%; margin-right:30px; float:left;"}
 
 I am **Edoardo Filippi**, a bioinformatician working in the lab of **Federico Marini**.  
-This is what I do: 
-I analyze biological data, develop pipelines for single-cell RNA-seq, and create reproducible reports and software tools for research projects.
+I analyze biological data, develop pipelines for single-cell RNA-seq, and create reproducible reports and software tools for research projects. -->
+
+::: {.grid style="margin-top: 5rem;"}
+
+::: {.g-col-4}
+![Profile Photo](images/profile.png){style="border-radius:50%; width:100%;"}
+:::
+
+::: {.g-col-8}
+## **Edoardo Filippi**
+
+**I am Bioinformatician in the lab of Federico Marini**
+
+I analyze biological data, develop pipelines for single-cell RNA-seq,
+and create reproducible reports and software tools for research projects.
+:::
+
 :::

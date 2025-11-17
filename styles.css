@@ -28,14 +28,17 @@ a:hover {
    NAVBAR
 ---------------------------------*/
 .navbar {
-    background-color: #ffffff;
+    background-color: #2E4057;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #fff;
 }
 
 .navbar a {
     margin: 0 15px;
     font-weight: 500;
+    color: #fff;
 }
+
 
 /* -------------------------------
    HERO SECTION (Homepage)
@@ -171,4 +174,8 @@ a:hover {
     .hero p {
         font-size: 1em;
     }
+}
+
+.footer {
+    color: #C0D461;
 }
