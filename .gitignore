@@ -28,4 +28,3 @@ node_modules/
 **/*.quarto_ipynb
 
 ignore
-renv/
