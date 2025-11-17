@@ -1,0 +1,24 @@
+---
+title: Curriculum vitæ
+description: "Edoardo Filippi's CV"
+date: 2025-11-25
+title-block-banner: "#AEF78E"
+published-title: CV last updated
+engine: knitr
+freeze: false
+cv:
+  pdf: "2025-11_edoardo-filippi-cv.pdf"
+
+---
+<!-- 
+```{=html}
+<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
+  </a>
+</p>
+
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px"></iframe>
+</div>
+``` -->

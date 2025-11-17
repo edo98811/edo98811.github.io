@@ -1,9 +1,19 @@
 ---
 title: "Projects"
+title-block-banner: "#66A182"
 format: html
+title-block-banner-color: "black"
+
 ---
 
 Welcome! Here are some of my projects. Click the GitHub icon to see the source code.
+
+---
+
+## Deutschlernen
+
+Anki inspierd python application developed with PyQt.
+[GitHub 🔗](https://github.com/edo98811/Deutschlernen.git)
 
 ---
 
@@ -15,25 +25,29 @@ When you want to nice map of a place that's dear to you but don't want to pay.
 ---
 
 ## rbioinfo r-package
-A collection of functions to help building reports in Rmarkdown or quarto.  
-[GitHub 🔗](https://github.com/edo98811/helper-functions-rbioinfo.git)
-
----
-
-## rbioinfo r-package
 A collection of functions to help building reports in Rmarkdown.  
 [GitHub 🔗](https://github.com/edo98811/helper-functions-rbioinfo.git)
 
 ---
 
-## cdt_to_se
+## Metabolonize
 An interface to convert Metabolon data table objects to SingleCellExperiment objects.  
 [GitHub 🔗](https://github.com/edo98811/metabolon_summarized_experiment.git)
 
 ---
 
+## Perspective correction and object annotation 
+
+To assist in the boring task for a the data analysis needed for a paper.
+Publication:
+[GitHub 🔗](https://github.com/edo98811/WiMa2025.git)
+
+
+---
+
 ## WiMa_app
-An application to represent our institute in the wissenschaftsmarkt 2025 in Mainz.  
+An application to represent our institute in the wissenschaftsmarkt 2025 in Mainz. 
+Developed with:  
 [GitHub 🔗](https://github.com/edo98811/WiMa2025.git)
 
 ---
@@ -51,13 +65,13 @@ A Python package to automate execution of freesurfer pipelines using docker.
 ---
 
 ## celescope processing
-A Python package to simplify the processing of single-cell RNA-seq data.  
+A Python package to simplify the processing of single-cell RNA-seq data (my first interaction with bioinformatics).  
 [GitHub 🔗](https://github.com/edo98811/celescope-preprocessing)
 
 ---
 
 ## Lux-meter
-A light intensity measurement tool written in Assembly language.  
+A light intensity measurement tool written in Assembly language, made to work on an atmega.  
 [GitHub 🔗](https://github.com/edo98811/Lux-meter.git)
 
 ---
